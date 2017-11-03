@@ -1,6 +1,5 @@
 <templateSet group="PHP">
   <template name="sdbg" value="Zend_Debug::dump($SELECTION$)$END$" description="Debug with Zend_Debug" toReformat="true" toShortenFQNames="true">
-    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JSP" value="false" />
       <option name="PHP" value="true" />
@@ -55,14 +54,12 @@
     </context>
   </template>
   <template name="qts" value="'$SELECTION$'$END$" description="Single quotes" toReformat="true" toShortenFQNames="true">
-    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JSP" value="false" />
       <option name="PHP" value="true" />
     </context>
   </template>
   <template name="dqts" value="&quot;$SELECTION$&quot;$END$" description="Double quotes" toReformat="true" toShortenFQNames="true">
-    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JSP" value="false" />
       <option name="PHP" value="true" />
@@ -116,6 +113,12 @@
     <variable name="UCFmethod" expression="capitalize(method)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="tryc" value="try {&#10;    $SELECTION$$END$&#10;} catch ($exception$ $ex) {&#10;    echo $ex-&gt;getTraceAsString();&#10;}" description="try catch" toReformat="false" toShortenFQNames="true">
+    <variable name="exception" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
       <option name="PHP" value="true" />
     </context>
   </template>
