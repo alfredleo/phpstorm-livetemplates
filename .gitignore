@@ -1,6 +1,4 @@
 # IntelliJ project files
-*.iml
 out
 gen
-.gitignore
 .idea/
