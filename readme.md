@@ -1,6 +1,6 @@
 # PhpStorm Live Templates
 
-
+Please send PR if you have good php live templates. You can add them directly to xml or add them to snippets.txt.
 
 ## Installation
 
@@ -10,13 +10,14 @@ First, find your configuration folder.
 	Linux: ~\.WebIde<version>\config
 	MacOS: ~/Library/Preferences/WebIde<version>
 
-On my linux, it would be <code>~/.WebIde70/config</code> so you have to adjust commands to your platform. There is a <code>templates/</code> directory. It contains XML files with Live Templates.
+On linux, it would be <code>~/.WebIde70/config</code> so you have to adjust commands to your platform. 
+There is a <code>templates/</code> directory. It contains XML files with Live Templates.
 
 Create a git repository in the `templates/` dir and pull the templates
 
 	$ cd ~/.WebIde50/config/templates/
 	$ git init
-	$ git remote add origin git://github.com/fprochazka/phpstorm-livetemplates.git
+	$ git remote add origin git://github.com/alfredleo/phpstorm-livetemplates.git
 	$ git pull origin master
 
 If this wouldn't work, you should just backup your templates, clone the repo and merge them manually.
